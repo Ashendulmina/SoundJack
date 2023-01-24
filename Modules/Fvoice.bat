@@ -4,15 +4,17 @@ cls
 
 set voice=Fvoice.vbs
 set mod=Female
-set ver=1.0
-set stat=BETA
+set ver=2.4
+set stat=Release
+
+title Sound Jack
 
 :START
 echo [+]=================================================================================[+]
 echo.
-echo   *******    *******   /     /   /\      /  /*****\     +++++  +++++++   ******  /   +
-echo  /          /      /  /     /   /  \    /  /       \     /    /     /  /        /  +
-echo  *******   /      /  /     /   /    \  /  /       /     /    /*****/  /        /\+
+echo   *******    *******   /     /   /\      /  /*****\     #####  +++++++   ******  / /
+echo  /          /      /  /     /   /  \    /  /      /      /    /     /  /        / /
+echo  *******   /      /  /     /   /    \  /  /      /      /    /*****/  /        /\/
 echo        /  /      /  /     /   /      \/  /      /      /    /     /  /        /  \
 echo *******   ******    ******   *        *  ******    ****    /     /   ******  /    \
 echo.
@@ -23,16 +25,17 @@ echo.
 echo [+]=================================================================================[+]
 echo.
 echo.
-echo 1).Test Run		2).Who R U
-echo 3).Hello MF		4).Qund Pris
-echo 5).Quand 2		6).Quand 3
-echo 7).How Old		8).Ball
-echo 9).Song		10).GTA
+echo 1).Test Run		2).Who Are You
+echo 3).Sup MF		4).Qundale Prison
+echo 5).Quandale 2		6).Quandale 3
+echo 7).How Old Are		8).Ball
+echo 9).GTA			10).Song
 echo 11).Custom Thing	12).Roll
 echo 13).Back(choose voice)
+echo.
 
 :ASK
-set /P cho= "choise=>"
+set /P cho= "::choice===>"
 if %cho% == 1 goto AB
 if %cho% == 2 goto CD
 if %cho% == 3 goto EF
